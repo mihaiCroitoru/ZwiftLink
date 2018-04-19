@@ -26,10 +26,6 @@ class ViewController: UIViewController {
     let reachability = Reachability()!
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (userName == nil || userPassword == nil)  {
-            userName = ProcessInfo.processInfo.environment["HaniUserName"]
-            userPassword = ProcessInfo.processInfo.environment["HaniPassword"]
-        }
         do{
             try reachability.startNotifier()
         }catch{

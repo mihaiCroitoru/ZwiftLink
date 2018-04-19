@@ -7,6 +7,7 @@
 
 import Foundation
 import ProtocolBuffers
+import SwiftProtobuf
 
 
 public struct ZwiftMessagesRoot {
@@ -141,7 +142,7 @@ final public class PlayerState : GeneratedMessage {
         super.init()
     }
     override public func isInitialized() -> Bool {
-        return true
+        return true;
     }
     
     override public func writeTo(codedOutputStream: CodedOutputStream) throws {

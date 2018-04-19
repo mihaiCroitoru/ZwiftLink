@@ -29,8 +29,8 @@ class ZwiftService {
     var token_type: NSString? = nil
     var myPlayerId: NSNumber? = nil
     // absolute expire times of the access and refresh tokens
-    var access_token_expiration: NSObject? = nil
-    var refresh_token_expiration: NSObject? = nil
+    var access_token_expiration: Double? = nil
+    var refresh_token_expiration: Double? = nil
     //---
     static let defaultManager = ZwiftService()
     enum SignInResult {
@@ -45,18 +45,36 @@ class ZwiftService {
         case success(PlayerState)
         case failure(Error)
     }
+    func has_valid_access_token() -> Bool {
+        if  self.access_token != nil && Date().timeIntervalSince1970 < self.access_token_expiration! {
+            return true
+        }
+        return false;
+    }
+    func has_valid_refresh_token() -> Bool {
+        if  self.access_token != nil && Date().timeIntervalSince1970 < self.refresh_token_expiration! {
+            return true
+        }
+        return false;
+    }
     // Networking: communicating server
-    func signin(username: String, password: String, completion: @escaping (SignInResult) -> ()) {
+    func signin(username: String?, password: String?, completion: @escaping (SignInResult) -> ()) {
         guard loggingIn == false else {
             return
         }
         loggingIn = true
-        let parameters: [String: String] = [
-            "username" : username,
-            "password" : password,
-            "grant_type" : "password",
+        var parameters: [String: String] = [
             "client_id": "Zwift_Mobile_Link"
         ]
+        if let _username = username, let _password = password {
+            parameters.updateValue(_username, forKey: "username")
+            parameters.updateValue(_password, forKey: "password")
+            parameters.updateValue("password", forKey: "grant_type")
+        }
+        else if self.has_valid_refresh_token() {
+            parameters.updateValue("refresh_token", forKey: "grant_type")
+            parameters.updateValue(self.refresh_token! as String, forKey: "refresh_token")
+        }
         Alamofire.request(self.loginURL, method: HTTPMethod.post, parameters: parameters, encoding: URLEncoding.default)
             .responseJSON { response in
                 self.loggingIn = false
@@ -72,8 +90,8 @@ class ZwiftService {
                         self.refresh_token = response.value(forKey: "refresh_token") as? NSString
                         self.refresh_expires_in = response.value(forKey: "refresh_expires_in") as? NSNumber
                         self.token_type = response.value(forKey: "token_type") as? NSString
-                        self.access_token_expiration = response.value(forKey: "access_token_expiration") as? NSObject
-                        self.refresh_token_expiration = response.value(forKey: "refresh_token_expiration") as? NSObject
+                        self.access_token_expiration = Date().timeIntervalSince1970 + ((self.expires_in?.doubleValue)! - 5)
+                        self.refresh_token_expiration = Date().timeIntervalSince1970 + ((self.refresh_expires_in?.doubleValue)! - 5)
                     }
                     completion(SignInResult.success(response["error"] as? String))
                 case .failure(let error):
@@ -85,6 +103,7 @@ class ZwiftService {
         guard gettingUserId == false && loggingIn == false else {
             return
         }
+        
         gettingUserId = true
         let headers: HTTPHeaders = [
             "Accept": "application/json",

@@ -60,15 +60,20 @@ class ViewController: UIViewController {
         }
     }
     @objc func LoginAndGetStatus() {
-        if (ZwiftService.defaultManager.access_token == nil ) {
-            //sign in to get a new token
-            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ZLLoginView") as? ZLLoginViewController
-            {
-                self.present(vc, animated: true, completion: nil)
+        if (!ZwiftService.defaultManager.has_valid_access_token() && !ZwiftService.defaultManager.has_valid_refresh_token()) {
+            if (ZwiftService.defaultManager.has_valid_refresh_token()) {
+                //get new access token with the valid refresh token
+                
+            } else {
+                //need to ask user to login because both the access token and the refresh token have expired
+                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ZLLoginView") as? ZLLoginViewController
+                {
+                    self.present(vc, animated: true, completion: nil)
+                }
             }
         }
         else {
-            //toke is valid so just get status
+            //token is valid so just get status
             getStatus()
         }
     }
@@ -104,7 +109,16 @@ class ViewController: UIViewController {
             return
         }
         //---  HANDLE RECEIVED DATA HERE  ---
-        self.speedLabel.text = "\(self.playerStatus?.speed ?? 0) km/h"
+        if let speed = self.playerStatus?.speed {
+            let normalizedSpeed = (Float(speed) / 1000000).rounded()
+            self.speedLabel.text = "\(normalizedSpeed) km/h"
+        } else {
+            self.speedLabel.text = "0 km/h"
+        }
+        if let cadence = self.playerStatus?.cadenceUhz {
+            //calculate cadende but now displaying it for now
+            let _ = (Float(cadence * 60) / 1000000).rounded()
+        }
         self.powerLabel.text = "\(self.playerStatus?.power ?? 0)"
     }
     override func didReceiveMemoryWarning() {

@@ -1,0 +1,6 @@
+framework module Pods_ZwiftLinkTests {
+  umbrella header "Pods-ZwiftLinkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

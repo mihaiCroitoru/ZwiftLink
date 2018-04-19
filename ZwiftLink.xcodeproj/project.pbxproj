@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09481A0EB3BA8570D187862F /* Pods_ZwiftLinkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4E70ED6D9E021379BA70C /* Pods_ZwiftLinkUITests.framework */; };
 		37D904E02087EA9E0094535A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D904DF2087EA9E0094535A /* AppDelegate.swift */; };
 		37D904E22087EA9E0094535A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D904E12087EA9E0094535A /* ViewController.swift */; };
 		37D904E52087EA9E0094535A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D904E32087EA9E0094535A /* Main.storyboard */; };
@@ -14,6 +15,11 @@
 		37D904EA2087EA9F0094535A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D904E82087EA9F0094535A /* LaunchScreen.storyboard */; };
 		37D904F52087EA9F0094535A /* ZwiftLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D904F42087EA9F0094535A /* ZwiftLinkTests.swift */; };
 		37D905002087EA9F0094535A /* ZwiftLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D904FF2087EA9F0094535A /* ZwiftLinkUITests.swift */; };
+		37D9050E2087EDA50094535A /* ZwiftMessages.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9050D2087EDA50094535A /* ZwiftMessages.proto.swift */; };
+		37D9051220881D630094535A /* ZwiftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9051120881D630094535A /* ZwiftService.swift */; };
+		37D905152088D0FF0094535A /* ZLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D905132088D0FF0094535A /* ZLLoginViewController.swift */; };
+		EDC78108A4418E465E725F2C /* Pods_ZwiftLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3521124B3A46F17E4F5D16 /* Pods_ZwiftLink.framework */; };
+		FC8F2AD31B2A7503E9A96379 /* Pods_ZwiftLinkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D554E44D5C205E9D248281 /* Pods_ZwiftLinkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1543645B3AC696C13443C7E3 /* Pods-ZwiftLinkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwiftLinkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZwiftLinkUITests/Pods-ZwiftLinkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AD4E70ED6D9E021379BA70C /* Pods_ZwiftLinkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZwiftLinkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BB15A2D6509A23436E4BDA /* Pods-ZwiftLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwiftLinkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZwiftLinkTests/Pods-ZwiftLinkTests.release.xcconfig"; sourceTree = "<group>"; };
 		37D904DC2087EA9E0094535A /* ZwiftLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZwiftLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D904DF2087EA9E0094535A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D904E12087EA9E0094535A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,15 @@
 		37D904FB2087EA9F0094535A /* ZwiftLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZwiftLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D904FF2087EA9F0094535A /* ZwiftLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZwiftLinkUITests.swift; sourceTree = "<group>"; };
 		37D905012087EA9F0094535A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D9050D2087EDA50094535A /* ZwiftMessages.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZwiftMessages.proto.swift; sourceTree = "<group>"; };
+		37D9051120881D630094535A /* ZwiftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZwiftService.swift; sourceTree = "<group>"; };
+		37D905132088D0FF0094535A /* ZLLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLLoginViewController.swift; sourceTree = "<group>"; };
+		5AE4D5601E16A44FF95B064C /* Pods-ZwiftLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwiftLink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZwiftLink/Pods-ZwiftLink.debug.xcconfig"; sourceTree = "<group>"; };
+		88D554E44D5C205E9D248281 /* Pods_ZwiftLinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZwiftLinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A2FC25D2EBE605585D286B /* Pods-ZwiftLinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwiftLinkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZwiftLinkTests/Pods-ZwiftLinkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3521124B3A46F17E4F5D16 /* Pods_ZwiftLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZwiftLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A600E1AA65372DBDBBD2BF19 /* Pods-ZwiftLinkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwiftLinkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZwiftLinkUITests/Pods-ZwiftLinkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D717FF97D49BA759D23015F0 /* Pods-ZwiftLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwiftLink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZwiftLink/Pods-ZwiftLink.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC78108A4418E465E725F2C /* Pods_ZwiftLink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8F2AD31B2A7503E9A96379 /* Pods_ZwiftLinkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09481A0EB3BA8570D187862F /* Pods_ZwiftLinkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C4815B8304A9B1286F03B06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4D5601E16A44FF95B064C /* Pods-ZwiftLink.debug.xcconfig */,
+				D717FF97D49BA759D23015F0 /* Pods-ZwiftLink.release.xcconfig */,
+				90A2FC25D2EBE605585D286B /* Pods-ZwiftLinkTests.debug.xcconfig */,
+				30BB15A2D6509A23436E4BDA /* Pods-ZwiftLinkTests.release.xcconfig */,
+				1543645B3AC696C13443C7E3 /* Pods-ZwiftLinkUITests.debug.xcconfig */,
+				A600E1AA65372DBDBBD2BF19 /* Pods-ZwiftLinkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		37D904D32087EA9E0094535A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +115,8 @@
 				37D904F32087EA9F0094535A /* ZwiftLinkTests */,
 				37D904FE2087EA9F0094535A /* ZwiftLinkUITests */,
 				37D904DD2087EA9E0094535A /* Products */,
+				0C4815B8304A9B1286F03B06 /* Pods */,
+				BCF78980EE9A69FA975D9A58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +136,12 @@
 				37D904DF2087EA9E0094535A /* AppDelegate.swift */,
 				37D904E12087EA9E0094535A /* ViewController.swift */,
 				37D904E32087EA9E0094535A /* Main.storyboard */,
+				37D9050D2087EDA50094535A /* ZwiftMessages.proto.swift */,
 				37D904E62087EA9F0094535A /* Assets.xcassets */,
 				37D904E82087EA9F0094535A /* LaunchScreen.storyboard */,
 				37D904EB2087EA9F0094535A /* Info.plist */,
+				37D9051120881D630094535A /* ZwiftService.swift */,
+				37D905132088D0FF0094535A /* ZLLoginViewController.swift */,
 			);
 			path = ZwiftLink;
 			sourceTree = "<group>";
@@ -125,6 +164,16 @@
 			path = ZwiftLinkUITests;
 			sourceTree = "<group>";
 		};
+		BCF78980EE9A69FA975D9A58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C3521124B3A46F17E4F5D16 /* Pods_ZwiftLink.framework */,
+				88D554E44D5C205E9D248281 /* Pods_ZwiftLinkTests.framework */,
+				1AD4E70ED6D9E021379BA70C /* Pods_ZwiftLinkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37D905042087EA9F0094535A /* Build configuration list for PBXNativeTarget "ZwiftLink" */;
 			buildPhases = (
+				DC9E70AEC53204E974492037 /* [CP] Check Pods Manifest.lock */,
 				37D904D82087EA9E0094535A /* Sources */,
 				37D904D92087EA9E0094535A /* Frameworks */,
 				37D904DA2087EA9E0094535A /* Resources */,
+				F8583C331F22B6C61668B566 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37D905072087EA9F0094535A /* Build configuration list for PBXNativeTarget "ZwiftLinkTests" */;
 			buildPhases = (
+				C4C9CE6D2D2632BD4554645F /* [CP] Check Pods Manifest.lock */,
 				37D904EC2087EA9F0094535A /* Sources */,
 				37D904ED2087EA9F0094535A /* Frameworks */,
 				37D904EE2087EA9F0094535A /* Resources */,
@@ -167,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37D9050A2087EA9F0094535A /* Build configuration list for PBXNativeTarget "ZwiftLinkUITests" */;
 			buildPhases = (
+				C1E1C87C3192EAA54C6712E0 /* [CP] Check Pods Manifest.lock */,
 				37D904F72087EA9F0094535A /* Sources */,
 				37D904F82087EA9F0094535A /* Frameworks */,
 				37D904F92087EA9F0094535A /* Resources */,
@@ -250,13 +303,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C1E1C87C3192EAA54C6712E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZwiftLinkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C9CE6D2D2632BD4554645F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZwiftLinkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9E70AEC53204E974492037 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZwiftLink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8583C331F22B6C61668B566 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZwiftLink/Pods-ZwiftLink-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZwiftLink/Pods-ZwiftLink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37D904D82087EA9E0094535A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				37D904E22087EA9E0094535A /* ViewController.swift in Sources */,
+				37D9050E2087EDA50094535A /* ZwiftMessages.proto.swift in Sources */,
+				37D9051220881D630094535A /* ZwiftService.swift in Sources */,
 				37D904E02087EA9E0094535A /* AppDelegate.swift in Sources */,
+				37D905152088D0FF0094535A /* ZLLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +564,7 @@
 		};
 		37D905052087EA9F0094535A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE4D5601E16A44FF95B064C /* Pods-ZwiftLink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +583,7 @@
 		};
 		37D905062087EA9F0094535A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D717FF97D49BA759D23015F0 /* Pods-ZwiftLink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +602,7 @@
 		};
 		37D905082087EA9F0094535A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A2FC25D2EBE605585D286B /* Pods-ZwiftLinkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +624,7 @@
 		};
 		37D905092087EA9F0094535A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30BB15A2D6509A23436E4BDA /* Pods-ZwiftLinkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +646,7 @@
 		};
 		37D9050B2087EA9F0094535A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1543645B3AC696C13443C7E3 /* Pods-ZwiftLinkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +667,7 @@
 		};
 		37D9050C2087EA9F0094535A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A600E1AA65372DBDBBD2BF19 /* Pods-ZwiftLinkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

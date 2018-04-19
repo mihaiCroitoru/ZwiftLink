@@ -27,8 +27,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if (userName == nil || userPassword == nil)  {
-            //todo: prompt for user Name and Password
-            //todo: check for valid accesstoken
             userName = ProcessInfo.processInfo.environment["HaniUserName"]
             userPassword = ProcessInfo.processInfo.environment["HaniPassword"]
         }
